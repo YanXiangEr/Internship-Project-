@@ -67,7 +67,7 @@ streamlit run src/app.py
 
 Streamlit normally opens `http://localhost:8501` in a browser.
 
-## Plain-language guide 
+## Guide to use the app
 
 ### What the model is doing
 
