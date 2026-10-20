@@ -1,0 +1,18 @@
+.venv/
+venv/
+micro_world/
+requirements_test/
+__pycache__/
+*.py[cod]
+backups/
+.streamlit/secrets.toml
+data/v2_simulated_images/
+*.backup-*
+project_tree.txt
+apply_*.py
+*_payload/
+PATCH_MANIFEST.json
+APPLY_PATCH.md
+
+# Large training-only checkpoints are not required by the deployed app.
+models/species_resnet18_*.pt
