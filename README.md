@@ -67,7 +67,7 @@ streamlit run src/app.py
 
 Streamlit normally opens `http://localhost:8501` in a browser.
 
-## Plain-language guide for a biology student
+## Plain-language guide 
 
 ### What the model is doing
 
