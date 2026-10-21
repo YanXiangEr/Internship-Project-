@@ -93,17 +93,16 @@ unassigned.
 
 ### How to use the app
 
-1. Start the app with `streamlit run src/app.py` from the project root.
-2. Choose the forward model, inverse model or world-state simulator.
-3. Select one of the supported species.
-4. Enter the water factor or biological response exactly as represented in the
+1. Choose the forward model, inverse model or world-state simulator.
+2. Select one of the supported species.
+3. Enter the water factor or biological response exactly as represented in the
    interface. Add a numerical value and unit when the evidence is
    concentration-specific.
-5. Choose the evidence threshold. A higher threshold hides weaker contextual
+4. Choose the evidence threshold. A higher threshold hides weaker contextual
    relationships; it does not make the remaining scores into probabilities.
-6. Read the result together with its supporting observation, relationship type
+5. Read the result together with its supporting observation, relationship type
    and evidence contribution.
-7. For a simulation, compare the V1 reference, the V2 transformation reference
+6. For a simulation, compare the V1 reference, the V2 transformation reference
    and the safety decisions. They can be different records for a valid reason.
 
 ### How the visual outputs work
