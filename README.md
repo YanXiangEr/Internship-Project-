@@ -213,19 +213,8 @@ gates.
 
 ## Handover notes
 
-- Do not run historical `apply_*.py` scripts on a current completed copy.
-- Do not share virtual environments, caches, temporary outputs or backup
-  directories.
 - Keep the directory structure unchanged because datasets, images and policies
   are resolved relative to the project root.
 - Local SQLite updates are not guaranteed to persist on Streamlit Community
   Cloud. Treat the local project and version-controlled repository as the
   authoritative source.
-
-## Future work
-
-Useful extensions include additional independently reviewed observations,
-expert validation of evidence rules, temporal data for growth and behaviour,
-organism segmentation masks, calibrated uncertainty and a persistent hosted
-database for collaborative editing.
-
