@@ -42,6 +42,28 @@ This is a research prototype, not a diagnostic system.
 - The dataset and species coverage remain limited, so reported evaluation
   results should be interpreted cautiously.
 
+The evidence scores show how directly and reliably a database observation supports a particular model result. They are ranking values created by your evidence framework—not probabilities, accuracy measurements or biological effect sizes.
+For example, a score of 0.9 does not mean there is a 90% probability that the response will occur.
+
+1. Case-specific evidence — 1.0
+This is the strongest type of evidence. It means:
+- The water factor and biological response belong to the same explicitly defined experimental case.
+- Where available, the case includes a matching treatment, concentration, panel or experimental group.
+- The model can connect the response to that particular case without transferring it from another treatment in the same study.
+
+2. Experimentally observed evidence — 0.9
+This means the environmental factor and biological response were reported together in an experimental observation, but the database may not have enough case-level detail to give it a perfect 1.0. These are strong experimental relationships, but some lack a precisely defined concentration or individual treatment case.
+
+3. Co-observed evidence — 0.6
+Co-observed evidence means the factor and response appeared in the same broader observation or research context, but the factor was not clearly established as the direct experimental treatment.
+It supports the statement: “These two things were observed together.” It does not necessarily support: “This factor directly caused this response.”
+
+4. Observation-level evidence — 0.45
+Observation-level evidence means the environmental treatment is known and the response is documented, but the response was only reported for the observation as a whole. The model cannot confidently assign the response to one particular case, concentration or panel. If certain concentrations of a substance was given and a few responses from the microorganism was recorded, they would all be given an evidence score of 0.45 if the source does not clearly establish which individual response belongs specifically to which level of concentration.
+
+5. Uncertain evidence — 0.25
+This is evidence retained for completeness when the original source contains conflicting, ambiguous or incomplete information. It allows the model to preserve the record without presenting it as reliable evidence.
+
 ## Installation on Windows
 
 Python 3.11 is recommended for reproducing the current environment.
