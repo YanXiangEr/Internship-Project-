@@ -55,6 +55,16 @@ st.set_page_config(
     layout="wide"
 )
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+LOGO_PATH = PROJECT_ROOT / "WSCA-Logo.jpg"
+
+st.image(str(LOGO_PATH), width=700)
+
+st.info(
+    "This project was incubated by Water Sensitive Cities Australia "
+    "through the Lab to Land initiative."
+)
+
 
 # ============================================================
 # HELPER FUNCTIONS
